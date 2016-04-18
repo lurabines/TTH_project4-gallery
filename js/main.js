@@ -8,10 +8,10 @@ $(document).ready(function(){
 		var inputValue = $(this).val();
 		
 		// Loop through the comment list
-		$("#gallery li img").each(function(){
+		$("#gallery li a").each(function(){
 		
 			// If the list item does not contain the title attr, fade it out
-			if ($(this).attr("alt").search(new RegExp(inputValue, "i")) < 0) {
+			if ($(this).attr("title").search(new RegExp(inputValue, "i")) < 0) {
 			$(this).fadeOut();
 			
 			// Show the list item if the phrase matches
@@ -23,6 +23,24 @@ $(document).ready(function(){
 
 
 
+//Magnific Popup
+$('.parent-container').magnificPopup({
+  delegate: 'a', // child items selector, by clicking on it popup will open
+  type: 'image',
+  
+  gallery:{
+    enabled:true
+  }
+  
+  // other options
+});
+
+
+
+
+
+
+/*
 //Lightbox
 var $overlay = $('<div id="overlay"></div>');
 var $image = $("<img>");
@@ -116,7 +134,7 @@ function getNextImage() {
 $closeLightbox.click(function(){
  $overlay.hide();
 });
-
+*/
 
 
 

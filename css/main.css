@@ -40,7 +40,6 @@ img {
 }
 
 	.inner-content {
-		background-color: red;
 		margin: 0 auto;
 		max-width: 980px;
 	}
@@ -64,6 +63,16 @@ img {
 				display: block;
 			}
 
+
+
+
+img.mfp-img {
+	max-width: 600px;
+}
+
+
+
+/*
 #overlay{
 	background-color: rgba(0, 0, 0, 0.8);
 	display: none;
@@ -139,7 +148,7 @@ img {
     -o-transition: opacity 0.2s;
     transition: opacity 0.2s;	
 }
-
+*/
 
 
 
